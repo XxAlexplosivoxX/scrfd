@@ -23,10 +23,10 @@ async = ["tokio"]
 
 [dependencies]
 ort = { version = "2.0.0-rc.10", features = [ "ndarray" ] }
-opencv = "0.93.4"
-ndarray = "0.16.1"
+opencv = "0.98.1"
+ndarray = "0.17.2"
 uuid = "1.11.0"
 anyhow = "1.0.93"
-ndarray-stats = "0.4"
+ndarray-stats = "0.7.0"
 tokio = { version = "1.0", optional = true }
 log = "0.4"

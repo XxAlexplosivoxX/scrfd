@@ -50,10 +50,10 @@ impl SCRFD {
 
         // Get model input and output names
         let output_names: Vec<String> =
-            session.outputs.iter().map(|o| o.name.clone()).collect();
+            session.outputs().iter().map(|o| o.name().clone()).collect();
 
         let input_names: Vec<String> =
-            session.inputs.iter().map(|i| i.name.clone()).collect();
+            session.inputs().iter().map(|i| i.name().clone()).collect();
 
 
 
