@@ -49,8 +49,13 @@ impl SCRFD {
         let std = 128.0;
 
         // Get model input and output names
-        let output_names = session.outputs.iter().map(|o| o.name.clone()).collect();
-        let input_names = session.inputs.iter().map(|i| i.name.clone()).collect();
+        let output_names: Vec<String> =
+            session.outputs.iter().map(|o| o.name.clone()).collect();
+
+        let input_names: Vec<String> =
+            session.inputs.iter().map(|i| i.name.clone()).collect();
+
+
 
         Ok(SCRFD {
             input_size,
